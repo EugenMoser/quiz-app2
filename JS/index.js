@@ -11,10 +11,11 @@ const pAnswer = document.querySelector('[js-data="card__answer"]');
 
 answerButton.addEventListener("click", () => {
   if (answerButton.textContent === "Show answer") {
-    pAnswer.classList.add("card__answer--active");
+    //pAnswer.classList.add("card__answer--active");
     answerButton.textContent = "Hide answer";
   } else {
-    pAnswer.classList.remove("card__answer--active");
+    //pAnswer.classList.remove("card__answer--active");
     answerButton.textContent = "Show answer";
   }
+  pAnswer.classList.toggle("card__answer--active");
 });
