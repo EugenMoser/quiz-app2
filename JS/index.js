@@ -10,14 +10,11 @@ const answerButton = document.querySelector('[js-data="card__button-answer"]');
 const pAnswer = document.querySelector('[js-data="card__answer"]');
 
 answerButton.addEventListener("click", () => {
-  pAnswer.classList.toggle("card__answer--active");
-
-  // add / remove text
-  // ???? why it works???
-  if (pAnswer.className === "card__answer") {
-    answerButton.textContent = "Show answer";
-  } else {
+  if (answerButton.textContent === "Show answer") {
+    pAnswer.classList.add("card__answer--active");
     answerButton.textContent = "Hide answer";
+  } else {
+    pAnswer.classList.remove("card__answer--active");
+    answerButton.textContent = "Show answer";
   }
 });
-// ????? The toggle functionality should be applied by using a class which is named "hidden"
