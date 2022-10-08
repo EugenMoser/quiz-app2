@@ -7,7 +7,7 @@ form {
   gap: 10px;
 }
 
-.form__fieldset {
+.form-fieldset {
   display: flex;
   flex-direction: column;
   position: relative;
