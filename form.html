@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="/JS/form.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Bookmarks</h1>
     </header>
     <main>
-      <form>
+      <form js-data="form">
         <fieldset class="form-fieldset">
           <label for="form__question">Your question:</label>
           <textarea id="form__question"  rows="5"></textarea>
@@ -24,7 +25,7 @@
           <input type="text" id="form__tag" ></input>
         </fieldset>
 
-        <button type="submit" class="form__button">Submit</button>
+        <button type="submit" class="form__button" js-data="form__button" value="Submit">Submit</button>
       </form>
     </main>
 
