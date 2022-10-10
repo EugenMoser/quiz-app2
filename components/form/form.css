@@ -4,7 +4,8 @@ form {
   padding: 10rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
+  list-style: none;
 }
 
 .form-fieldset {
@@ -23,4 +24,9 @@ form {
   display: block;
   margin: 0 30% 2rem 30%;
   padding: 1rem;
+}
+
+small {
+  margin-bottom: 50px;
+  text-align: right;
 }
